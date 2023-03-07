@@ -1,9 +1,18 @@
-package cl.janodevg.junit5app.ejemplos.models;
+package cl.janodevg.ejemplos.models;
 
 import java.math.BigDecimal;
 
 public class Account {
     private String person;
+
+    public Account(String person, BigDecimal amount) {
+        this.person = person;
+        this.amount = amount;
+    }
+
+    public Account() {
+    }
+
     private BigDecimal amount;
 
     public String getPerson() {
